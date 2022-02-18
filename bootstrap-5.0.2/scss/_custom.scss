@@ -1,0 +1,230 @@
+//
+// Custom styles
+//
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+// COLORS
+//
+// scss-docs-start gray-color-variables
+$white:    #fff !default;
+$gray-100: #eceeef !default;
+$gray-200: #eceeef !default;
+$gray-300: #eceeef !default;
+$gray-400: #b7b7b7 !default;
+$gray-500: #b7b7b7 !default;
+$gray-600: #b7b7b7 !default;
+$gray-700: #575757 !default;
+$gray-800: #575757 !default;
+$gray-900: #575757 !default;
+$black:    #000 !default;
+
+// scss-docs-start color-variables
+$blue:         #285269 !default;
+$indigo:       #15808a !default;
+$cyan:         #5ed9de !default;
+$light-blue:   #aed0e0 !default;
+$green:        #076908 !default;
+$teal:         #53a20f !default;
+$bean:         #65d673 !default;
+$freezy-grass: #d6ffdc !default;
+$red:          #c9034f !default;
+$rasberry:     #eb035c !default;
+$rose:         #ff9ac1 !default;
+$hot-creamy:   #f0e1e1 !default;
+$yellow:       #886c11 !default;
+$sunny:        #ffcd00 !default;
+$sandy:        #ffe57b !default;
+$creamy:       #fff9e0 !default;
+$orange:       #ce3700 !default;
+$sunset:       #ff952b !default;
+$abricot:      #ffb779 !default;
+$krema:        #fff1dd !default;
+$purple:       #9c27b0 !default;
+$violet:       #af52de !default;
+$pink:         #ff7be0 !default;
+$lavander:     #ffe5fb !default;
+
+// scss-docs-start colors-map
+$colors: (
+  "blue":             $blue,
+  "indigo":           $indigo,
+  "cyan":             $cyan,
+  "light-blue":       $light-blue,
+  "green":            $green,
+  "teal":             $teal,
+  "bean":             $bean,
+  "freezy-grass":     $freezy-grass,
+  "red":              $red,
+  "rasberry":         $rasberry,
+  "rose":             $rose,
+  "hot-creamy":       $hot-creamy,
+  "yellow":           $yellow,
+  "sunny":            $sunny,
+  "sandy":            $sandy,
+  "creamy":           $creamy,
+  "orange":           $orange,
+  "sunset":           $sunset,
+  "abricot":          $abricot,
+  "krema":            $krema,
+  "purple":           $purple,
+  "violet":           $violet,
+  "pink":             $pink,
+  "lavander":         $lavander,
+  "white":            $white,
+  "gray":             $gray-600,
+  "gray-dark":        $gray-800
+) !default;
+
+// scss-docs-start theme-color-variables
+$primary:       $indigo !default;
+$secondary:     $cyan !default;
+$success:       $green !default;
+$info:          $blue !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-900 !default;
+
+// scss-docs-start theme-colors-map
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+) !default;
+
+//
+// Bootstrap Variables
+//
+$border-width:                1px !default;
+$input-btn-border-width:      $border-width !default;
+$indigo-100: tint-color($indigo, 80%) !default;
+
+//
+// Custom styles
+//
+
+// BORDERS
+//
+// scss-docs-start border-variables
+$border-color:                $primary !default;
+
+// scss-docs-start border-radius-variables
+$border-radius:               5px !default;
+$border-radius-sm:            5px !default;
+$border-radius-lg:            5px !default;
+$border-radius-pill:          50rem !default;
+
+// FONT
+//
+
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+
+// Headings
+$h1-font-size:                $font-size-base * 3 !default;
+$h2-font-size:                $font-size-base * 2.5 !default;
+$h3-font-size:                $font-size-base * 2 !default;
+$h4-font-size:                $font-size-base * 1.75 !default;
+$h5-font-size:                $font-size-base * 1.5 !default;
+$h6-font-size:                $font-size-base * 1.25 !default;
+
+// Typed Variables
+//
+// Blockquotes
+$blockquote-footer-color:     $abricot !default;
+
+// Padding
+$input-btn-padding-y-lg:      1.75rem !default;
+$input-btn-padding-x-lg:      2rem !default;
+$input-padding-y-lg:                    $input-btn-padding-y-lg !default;
+$input-padding-x-lg:                    $input-btn-padding-x-lg !default;
+$input-btn-padding-y-sm:      .5rem !default;
+$input-btn-padding-x-sm:      .75rem !default;
+$input-padding-y-sm:                    $input-btn-padding-y-sm !default;
+$input-padding-x-sm:                    $input-btn-padding-x-sm !default;
+$input-btn-padding-x:         2.75rem !default;
+$btn-padding-x:               $input-btn-padding-x !default;
+
+// TABLE
+//
+// Table border
+$table-border-factor:         .1 !default;
+$table-border-width:          5px !default;
+$table-border-color:          $white !default;
+
+// scss-docs-start table-loop
+$table-variants: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark,
+) !default;
+
+//
+// BUTTON
+//
+// large button
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$border-radius-lg:            .3rem !default;
+$font-size-lg:                $font-size-base * 1.25 !default;
+$input-btn-font-size-lg:      $font-size-lg !default;
+$btn-font-size-lg:            $input-btn-font-size-lg !default;
+$btn-border-radius-lg:        $border-radius-lg !default;
+
+// small button
+$border-radius-sm:            .3rem !default;
+$font-size-sm:                $font-size-base * 1.25 !default;
+$input-btn-font-size-sm:      $font-size-sm !default;
+$btn-font-size-sm:            $input-btn-font-size-sm !default;
+$btn-border-radius-sm:        $border-radius-sm !default;
+
+
+//
+// Button Sizes
+//
+$btn-padding-y-lg:            $input-btn-padding-y-lg !default;
+$btn-padding-x-lg:            $input-btn-padding-x-lg !default;
+
+.btn-lg {
+  padding: $btn-padding-y-lg $btn-padding-x-lg;
+  font-size: $btn-font-size-lg;
+  border: $btn-border-radius-lg;
+}
+
+// FORM COMPONENTS
+//
+// scss-docs-start form-input-variables
+$input-bg:                              $white !default;
+$input-disabled-bg:                     $indigo-100 !default;
+$input-disabled-border-color:           null !default;
+
+$input-color:                           $primary !default;
+$input-border-color:                    $secondary !default;
+$input-border-width:                    $input-btn-border-width !default;
+$input-box-shadow:                      null !default;
+
+$form-check-input-border:                 1px solid $cyan !default;
+$form-check-input-checked-bg-color:       $cyan !default;
+
+// input validation
+
+.was-validated .form-check-input:invalid ~ .form-check-label,
+.form-check-input.is-invalid ~ .form-check-label {
+  color: $info;
+}
+
+// SELECT
+$form-select-disabled-bg:           $indigo-100 !default;
+
+// RANGE
+$form-range-thumb-width:                   2rem !default;
+$form-range-thumb-height:                  $form-range-thumb-width !default;
+$form-range-thumb-bg:                      $cyan !default;
+$form-range-thumb-border:                  5px solid $white !default;
