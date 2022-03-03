@@ -26,3 +26,29 @@ Vous pouvez vous baser sur les exemples que vous voyez car ils sont mis à jour 
 bootstrap-5.0.2/
 ├── scss
     └── custom.scss
+```
+
+## Nos modifications
+ Voici la liste des modifications effectuées.
+
+### Les couleurs
+Les gris sont limités à 5.
+On se retrouve avec 6 couleurs (blue, green, red, yellow, orange, purple) chacune avec 4 déclinaisons (to improve).
+
+### Les bordures
+Des modifications légères comme le radius à 5px.
+
+### Les Headings
+Plus grands de 0,5 rem que prévu par Bootstrap.
+
+### Blockquotes
+La couleur qui sera abricot.
+
+### Les tableaux
+Ici plus de changements, on change les bordures, les fonds, les couleurs...
+
+### Les boutons
+On apporte plus de simplicité et on révise le style des boutons large et small pour correspondre à nos besoins.
+
+### Les éléments de formulaires
+On revoit le look des inputs, selects, range, checkbox...
