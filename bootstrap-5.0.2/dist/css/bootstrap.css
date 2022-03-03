@@ -6,6 +6,26 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+.table > :not(:last-child) > :last-child > * {
+  color: #fff;
+  background-color: #15808a;
+  border-top-color: #fff;
+  border-top-width: 5px;
+  border-right-color: #fff;
+  border-right-width: 5px;
+  border-bottom-color: #fff;
+  border-bottom-width: 5px;
+  border-left-color: #fff;
+  border-left-width: 5px;
+}
+
+th,
+td {
+  border-color: #fff;
+  border-style: solid;
+  border-width: 5px;
+}
+
 .btn-lg, .btn-group-lg > .btn {
   padding: 1.75rem 2rem;
   font-size: 1.25rem;
@@ -1983,7 +2003,7 @@ progress {
   vertical-align: bottom;
 }
 .table > :not(:last-child) > :last-child > * {
-  border-bottom-color: currentColor;
+  border-bottom-color: #fff;
 }
 
 .caption-top {

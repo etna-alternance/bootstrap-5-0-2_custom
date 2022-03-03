@@ -167,6 +167,32 @@ $table-variants: (
   "dark":       $dark,
 ) !default;
 
+// TABLES (in table.scss)
+$table-group-separator-color:   $white !default;
+
+.table{
+  > :not(:last-child) > :last-child > * {
+    color: $white;
+    background-color: $indigo;
+    border-top-color: $table-group-separator-color;
+    border-top-width: $table-border-width;
+    border-right-color: $table-group-separator-color;
+    border-right-width: $table-border-width;
+    border-bottom-color: $table-group-separator-color;
+    border-bottom-width: $table-border-width;
+    border-left-color: $table-group-separator-color;
+    border-left-width: $table-border-width;
+  }
+}
+
+//(in reboot.scss)
+th,
+td{
+  border-color: $table-group-separator-color;
+  border-style: solid;
+  border-width: $table-border-width;
+}
+
 //
 // BUTTON
 //
