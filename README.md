@@ -15,6 +15,8 @@ Une fois tout installé, il faut :
 - lancer la commande : npm install
 - puis pour lancer le server de pré-visualisation faire : npm start
 
+Pour voir le rendu de pré-visualisation : http://localhost:9001/
+
 ## Personnalisation
 
 Nous, nous avons un fichier custom.scss. C'est là que toutes nos modifications ce trouvent.
