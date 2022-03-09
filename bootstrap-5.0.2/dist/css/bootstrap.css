@@ -6140,6 +6140,28 @@ textarea.form-control-lg {
   transform: none;
 }
 
+.table {
+  --bs-table-bg: transparent;
+  --bs-table-accent-bg: transparent;
+  --bs-table-striped-color: #575757;
+  --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
+  --bs-table-active-color: #575757;
+  --bs-table-active-bg: rgba(0, 0, 0, 0.1);
+  --bs-table-hover-color: #575757;
+  --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #575757;
+  vertical-align: top;
+  border-color: #fff;
+}
+.table > :not(caption) > * > * {
+  padding: 0.5rem 0.5rem;
+  background-color: var(--bs-table-bg);
+  border: 5px solid #fff;
+  box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+}
+
 .clearfix::after {
   display: block;
   clear: both;
