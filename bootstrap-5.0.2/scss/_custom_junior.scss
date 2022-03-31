@@ -35,7 +35,7 @@ $table-group-separator-color:   $white !default;
 // Hack du fichier doc.css qu'impose bootstrap pour son thème de doc //
 ///////////////////////////////////////////////////////////////////////
 //
-// Navbar button
+// Buttons
 //
 
 .btn-bd-download-killer,
@@ -53,6 +53,29 @@ $table-group-separator-color:   $white !default;
 
   &:focus {
     box-shadow: 0 0 0 3px rgba($bd-download, .25);
+  }
+}
+
+.btn-clipboard-killer {
+  position: absolute;
+  top: .65rem;
+  right: .65rem;
+  z-index: 10;
+  display: block;
+  padding: .25rem .5rem;
+  font-size: .65em;
+  color: $orange;
+  background-color: $white;
+  border: 1px solid;
+  border-radius: .25rem;
+  &:hover,
+  &:active {
+    color: $white;
+    background-color: $orange;
+    border-color: $orange;
+  }
+  &:focus {
+    box-shadow: 0 0 0 3px rgba($orange, .25);
   }
 }
 
