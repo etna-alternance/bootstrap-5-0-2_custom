@@ -6152,17 +6152,21 @@ textarea.form-control-lg {
   box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
 }
 
-.btn-bd-download-killer {
+.btn-bd-download-killer,
+.btn-bd-primary-killer {
   font-weight: 600;
   color: #15808a;
   border-color: #15808a;
 }
-.btn-bd-download-killer:hover, .btn-bd-download-killer:active {
+.btn-bd-download-killer:hover, .btn-bd-download-killer:active,
+.btn-bd-primary-killer:hover,
+.btn-bd-primary-killer:active {
   color: #fff;
   background-color: #15808a;
   border-color: #15808a;
 }
-.btn-bd-download-killer:focus {
+.btn-bd-download-killer:focus,
+.btn-bd-primary-killer:focus {
   box-shadow: 0 0 0 3px rgba(21, 128, 138, 0.25);
 }
 

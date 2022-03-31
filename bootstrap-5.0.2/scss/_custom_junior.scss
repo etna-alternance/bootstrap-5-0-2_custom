@@ -38,7 +38,8 @@ $table-group-separator-color:   $white !default;
 // Navbar button
 //
 
-.btn-bd-download-killer {
+.btn-bd-download-killer,
+.btn-bd-primary-killer {
   font-weight: 600;
   color: $bd-download;
   border-color: $bd-download;
