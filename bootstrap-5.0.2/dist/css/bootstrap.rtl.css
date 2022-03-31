@@ -6152,6 +6152,126 @@ textarea.form-control-lg {
   box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
 }
 
+.swatch-blue-killer {
+  color: #fff;
+  background-color: #285269;
+}
+
+.swatch-indigo-killer {
+  color: #fff;
+  background-color: #15808a;
+}
+
+.swatch-cyan-killer {
+  color: #fff;
+  background-color: #5ed9de;
+}
+
+.swatch-light-blue-killer {
+  color: #285269;
+  background-color: #aed0e0;
+}
+
+.swatch-green-killer {
+  color: #fff;
+  background-color: #076908;
+}
+
+.swatch-teal-killer {
+  color: #fff;
+  background-color: #53a20f;
+}
+
+.swatch-bean-killer {
+  color: #fff;
+  background-color: #65d673;
+}
+
+.swatch-freezy-grass-killer {
+  color: #076908;
+  background-color: #d6ffdc;
+}
+
+.swatch-red-killer {
+  color: #fff;
+  background-color: #c9034f;
+}
+
+.swatch-rasberry-killer {
+  color: #fff;
+  background-color: #eb035c;
+}
+
+.swatch-rose-killer {
+  color: #fff;
+  background-color: #ff9ac1;
+}
+
+.swatch-hot-creamy-killer {
+  color: #c9034f;
+  background-color: #f0e1e1;
+}
+
+.swatch-yellow-killer {
+  color: #fff;
+  background-color: #886c11;
+}
+
+.swatch-sunny-killer {
+  color: #fff;
+  background-color: #ffcd00;
+}
+
+.swatch-sandy-killer {
+  color: #fff;
+  background-color: #ffe57b;
+}
+
+.swatch-creamy-killer {
+  color: #886c11;
+  background-color: #fff9e0;
+}
+
+.swatch-orange-killer {
+  color: #fff;
+  background-color: #ce3700;
+}
+
+.swatch-sunset-killer {
+  color: #fff;
+  background-color: #ff952b;
+}
+
+.swatch-abricot-killer {
+  color: #fff;
+  background-color: #ffb779;
+}
+
+.swatch-krema-killer {
+  color: #ce3700;
+  background-color: #fff1dd;
+}
+
+.swatch-purple-killer {
+  color: #fff;
+  background-color: #9c27b0;
+}
+
+.swatch-violet-killer {
+  color: #fff;
+  background-color: #af52de;
+}
+
+.swatch-pink-killer {
+  color: #fff;
+  background-color: #ff7be0;
+}
+
+.swatch-lavander-killer {
+  color: #9c27b0;
+  background-color: #ffe5fb;
+}
+
 .btn-bd-download-killer,
 .btn-bd-primary-killer {
   font-weight: 600;

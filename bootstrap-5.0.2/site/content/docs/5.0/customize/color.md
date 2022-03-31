@@ -14,7 +14,7 @@ We use a subset of all colors to create a smaller color palette for generating c
   {{< theme-colors.inline >}}
   {{- range (index $.Site.Data "theme-colors") }}
     <div class="col-md-4">
-      <div class="p-3 mb-3 bg-{{ .name }} {{ if .contrast_color }}text-{{ .contrast_color }}{{ else }}text-white{{ end }}">{{ .name | title }}</div>
+      <div class="p-3 mb-3 bg-{{ .name }} text-white">{{ .name | title }}</div>
     </div>
   {{ end -}}
   {{< /theme-colors.inline >}}
@@ -36,14 +36,11 @@ Be sure to monitor contrast ratios as you customize colors. As shown below, we'v
   {{< theme-colors.inline >}}
   {{- range $color := $.Site.Data.colors }}
     {{- if (and (not (eq $color.name "white")) (not (eq $color.name "gray")) (not (eq $color.name "gray-dark"))) }}
-    <div class="col-md-4 mb-3">
-      <div class="p-3 mb-2 position-relative swatch-{{ $color.name }}">
+    <div class="col-md-3 mb-3">
+      <div class="p-3 mb-2 position-relative swatch-{{ $color.name }}-killer">
         <strong class="d-block">${{ $color.name }}</strong>
         {{ $color.hex }}
       </div>
-      {{ range (seq 100 100 900) }}
-      <div class="p-3 bd-{{ $color.name }}-{{ . }}">${{ $color.name }}-{{ . }}</div>
-      {{ end }}
     </div>
     {{ end -}}
   {{ end -}}
