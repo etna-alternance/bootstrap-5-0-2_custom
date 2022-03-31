@@ -6181,6 +6181,14 @@ textarea.form-control-lg {
   box-shadow: 0 0 0 3px rgba(21, 128, 138, 0.25);
 }
 
+.bd-title {
+  color: #15808a;
+}
+
+.bd-lead {
+  color: #5ed9de;
+}
+
 .clearfix::after {
   display: block;
   clear: both;

@@ -31,8 +31,9 @@ $table-group-separator-color:   $white !default;
   }
 }
 
-// BUTTON
-
+///////////////////////////////////////////////////////////////////////
+// Hack du fichier doc.css qu'impose bootstrap pour son thème de doc //
+///////////////////////////////////////////////////////////////////////
 //
 // Navbar button
 //
@@ -52,4 +53,12 @@ $table-group-separator-color:   $white !default;
   &:focus {
     box-shadow: 0 0 0 3px rgba($bd-download, .25);
   }
+}
+
+// Titles
+.bd-title {
+  color: $primary;
+}
+.bd-lead{
+  color: $secondary;
 }
