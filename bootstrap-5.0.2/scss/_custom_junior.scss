@@ -30,3 +30,26 @@ $table-group-separator-color:   $white !default;
     box-shadow: inset 0 0 0 9999px var(--#{$variable-prefix}table-accent-bg);
   }
 }
+
+// BUTTON
+
+//
+// Navbar button
+//
+
+.btn-bd-download-killer {
+  font-weight: 600;
+  color: $bd-download;
+  border-color: $bd-download;
+
+  &:hover,
+  &:active {
+    color: $white;
+    background-color: $bd-download;
+    border-color: $bd-download;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 3px rgba($bd-download, .25);
+  }
+}

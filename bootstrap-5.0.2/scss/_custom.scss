@@ -103,9 +103,19 @@ $border-width:                1px !default;
 $input-btn-border-width:      $border-width !default;
 $indigo-100: tint-color($indigo, 80%) !default;
 
+// Local docs variables
+$bd-primary:       $secondary !default;
+$bd-download:      $primary !default;
+
 //
 // Custom styles
 //
+
+// Navbar
+.bd-navbar-killer {
+  padding: .75rem 0;
+  background-color: $bd-primary;
+}
 
 // BORDERS
 //
