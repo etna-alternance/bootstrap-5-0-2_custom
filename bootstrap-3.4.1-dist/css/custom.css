@@ -152,6 +152,43 @@ p {
 /*//////////// COLOR MANAGEMENT /////////////*/
 /*///////////////////////////////////////////*/
 
+.bs-primary, .bs-callout-primary h4{
+  color: #15808a;
+}
+.bs-secondary, .bs-callout-secondary h4{
+  color: #5ed9de;
+}
+.bs-success, .bs-callout-success h4{
+  color: #076908;
+}
+.bs-info, .bs-callout-info h4{
+  color: #285269;
+}
+.bs-warning, .bs-callout-warning h4{
+  color: #886c11;
+}
+.bs-danger, .bs-callout-danger h4{
+  border-left-color: #c9034f;
+}
+.bs-callout-primary{
+  border-left-color: #15808a;
+}
+.bs-callout-secondary{
+  border-left-color: #5ed9de;
+}
+.bs-callout-success{
+  border-left-color: #076908;
+}
+.bs-callout-info{
+  border-left-color: #285269;
+}
+.bs-callout-warning{
+  border-left-color: #886c11;
+}
+.bs-callout-danger{
+  border-left-color: #c9034f;
+}
+
 /*//////////// BTN MANAGEMENT //////////////*/
 /*///////////////////////////////////////////*/
 
@@ -694,8 +731,100 @@ fieldset[disabled] .btn-danger.focus {
 
 /* ---------- LINK ----------- */
 
-/*//////////// TABLE /////////////*/
-/*////////////////////////////////*/
+.btn-link {
+  font-weight: 400;
+  color: #15808a;
+  text-decoration: underline;
+  border-radius: 0;
+}
+.btn-link,
+.btn-link:active,
+.btn-link.active,
+.btn-link[disabled],
+fieldset[disabled] .btn-link {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.btn-link,
+.btn-link:hover,
+.btn-link:focus,
+.btn-link:active {
+  border-color: transparent;
+}
+.btn-link:hover,
+.btn-link:focus {
+  color: #15808a;
+  text-decoration: underline;
+  background-color: transparent;
+}
+.btn-link[disabled]:hover,
+fieldset[disabled] .btn-link:hover,
+.btn-link[disabled]:focus,
+fieldset[disabled] .btn-link:focus {
+  color: #777777;
+  text-decoration: none;
+}
+
+/*//////////// FORM MANAGEMENT /////////////*/
+/*//////////////////////////////////////////*/
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 2.75rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #15808a;
+    background-color: #fff;
+    background-image: none;
+    background-clip: padding-box;
+    border: 1px solid #5ed9de;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 5px;
+    box-shadow: none;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-control:focus {
+    color: #15808a;
+    background-color: #fff;
+    border-color: #8ac0c5;
+    outline: 0;
+    background-image: none;
+    box-shadow: 0 0 0 0.25rem rgb(21 128 138 / 25%);
+}
+
+/* ---------- label ----------- */
+.form-label {
+    margin-bottom: 0.5rem;
+}
+label {
+    display: inline-block;
+}
+
+/* ---------- input ----------- */
+
+input[type=file] {
+    display: block;
+    border: 1px solid #5ed9de;
+    border-radius: 5px;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+}
+input[type=file]::-webkit-file-upload-button{
+  color: #15808a;
+  padding: 1rem;
+  border: 0;
+  border-right: 1px solid #5ed9de;
+  background: #eee;
+}
+
+
+/*//////////// TABLE MANAGEMENT /////////////*/
+/*///////////////////////////////////////////*/
 
 .table > :not(:last-child) > :last-child > * {
   color: #fff;
