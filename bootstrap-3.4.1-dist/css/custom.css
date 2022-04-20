@@ -188,6 +188,49 @@ p {
 .bs-callout-danger{
   border-left-color: #c9034f;
 }
+.bg-success,
+.hidden-on .col-xs-6 .visible-lg-block,
+.hidden-on .col-xs-6 .visible-md-block,
+.hidden-on .col-xs-6 .visible-sm-block,
+.hidden-on .col-xs-6 .visible-xs-block,
+.visible-on .col-xs-6 .visible-lg-block,
+.visible-on .col-xs-6 .visible-md-block,
+.visible-on .col-xs-6 .visible-sm-block,
+.visible-on .col-xs-6 .visible-xs-block{
+  color:#076908;
+  background-color: #D6FFDC;
+}
+.bg-info{
+  color:#285269;
+  background-color: #AED0E0;
+}
+.bg-primary{
+  color:#AED0E0;
+  background-color: #285269;
+}
+.bg-warning{
+  color:#886c11;
+  background-color: #FFF9E0;
+}
+.bg-danger{
+  color:#C9034F;
+  background-color: #F0E1E1;
+}
+.color-swatches .brand-success{
+  background-color: #076908;
+}
+.color-swatches .brand-info{
+  background-color: #285269;
+}
+.color-swatches .brand-primary{
+  background-color: #15808a;
+}
+.color-swatches .brand-warning{
+  background-color: #886c11;
+}
+.color-swatches .brand-danger{
+  background-color: #C9034F;
+}
 
 /*//////////// BTN MANAGEMENT //////////////*/
 /*///////////////////////////////////////////*/
@@ -847,6 +890,61 @@ input[type=file]::-webkit-file-upload-button{
   border: 1px solid #5ed9de;
 }
 
+/* ---------- checkbox ----------- */
+input[type=checkbox],
+input[type=radio] {
+  width: 1.5em;
+  height: 1.5em;
+  margin-top: 0.25em;
+  vertical-align: top;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: 1px solid #5ed9de;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-print-color-adjust: exact;
+  color-adjust: exact;
+}
+input[type=checkbox] {
+  border-radius: 0.25em;
+}
+input[type=radio] {
+  border-radius: 50%;
+}
+input[type=checkbox]:active {
+  filter: brightness(90%);
+}
+input[type=checkbox]:focus,
+input[type=radio]:focus {
+  border-color: #8ac0c5;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(21, 128, 138, 0.25);
+}
+input[type=checkbox]:checked,
+input[type=radio]:checked {
+  background-color: #5ed9de;
+  border-color: #5ed9de;
+}
+input:checked[type=checkbox] {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+}
+input:checked[type=radio] {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
+}
+input[type=checkbox]:indeterminate {
+  background-color: #15808a;
+  border-color: #15808a;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e");
+}
+input[type=checkbox]:disabled,
+input[type=radio]:disabled {
+  pointer-events: none;
+  filter: none;
+  opacity: 0.5;
+}
 
 /*//////////// TABLE MANAGEMENT /////////////*/
 /*///////////////////////////////////////////*/
@@ -867,6 +965,12 @@ input[type=file]::-webkit-file-upload-button{
 th,
 td {
   border: 5px solid white;
+}
+
+.bs-table th small, .responsive-utilities th small {
+    display: block;
+    font-weight: 400;
+    color: #AED0E0;
 }
 
 /* ---------- status success ----------- */
@@ -1037,4 +1141,12 @@ blockquote .small, blockquote footer, blockquote small {
     background-image: linear-gradient(to bottom,#5ed9de 0,#285269 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5ed9de", endColorstr="#285269", GradientType=0);
     background-repeat: repeat-x;
+}
+
+.responsive-utilities td.is-visible{
+  color:#076908;
+  background-color: #D6FFDC!important;
+}
+.table > :not(:last-child) > :last-child > .is-visible{
+  background-color: #15808a!important;
 }
