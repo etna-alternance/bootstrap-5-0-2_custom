@@ -766,6 +766,27 @@ fieldset[disabled] .btn-link:focus {
   text-decoration: none;
 }
 
+/* ---------- CLIPBOARD ----------- */
+
+.btn-clipboard {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    display: block;
+    padding: 4px 15px;
+    margin: 4px;
+    font-size: 12px;
+    color: #ce3700;
+    cursor: pointer;
+    border: 1px solid #ce3700;
+    border-radius: 5px;
+}
+.btn-clipboard:hover {
+    color: #fff;
+    background-color: #ce3700;
+}
+
 /*//////////// FORM MANAGEMENT /////////////*/
 /*//////////////////////////////////////////*/
 
@@ -811,7 +832,7 @@ input[type=file] {
     display: block;
     border: 1px solid #5ed9de;
     border-radius: 5px;
-    padding: 0 1rem;
+    padding: 0;
     font-size: 1.5rem;
 }
 input[type=file]::-webkit-file-upload-button{
@@ -820,6 +841,10 @@ input[type=file]::-webkit-file-upload-button{
   border: 0;
   border-right: 1px solid #5ed9de;
   background: #eee;
+}
+.input-group-addon{
+  color: #15808a;
+  border: 1px solid #5ed9de;
 }
 
 
@@ -841,7 +866,175 @@ input[type=file]::-webkit-file-upload-button{
 
 th,
 td {
-  border-color: #fff;
-  border-style: solid;
-  border-width: 5px;
+  border: 5px solid white;
+}
+
+/* ---------- status success ----------- */
+
+.table>tbody>tr.success>td,
+.table>tbody>tr.success>th,
+.table>tbody>tr>td.success,
+.table>tbody>tr>th.success,
+.table>tfoot>tr.success>td,
+.table>tfoot>tr.success>th,
+.table>tfoot>tr>td.success,
+.table>tfoot>tr>th.success,
+.table>thead>tr.success>td,
+.table>thead>tr.success>th,
+.table>thead>tr>td.success,
+.table>thead>tr>th.success {
+    background-color: transparent;
+}
+.table>tbody>tr.success>th,
+.table>tbody>tr>th.success,
+.table>tfoot>tr.success>th,
+.table>tfoot>tr>th.success,
+.table>thead>tr.success>th,
+.table>thead>tr>th.success {
+  border-left: 5px solid #53a20f;
+}
+
+/* ---------- status info ----------- */
+
+
+.table>tbody>tr.info>td,
+.table>tbody>tr.info>th,
+.table>tbody>tr>td.info,
+.table>tbody>tr>th.info,
+.table>tfoot>tr.info>td,
+.table>tfoot>tr.info>th,
+.table>tfoot>tr>td.info,
+.table>tfoot>tr>th.info,
+.table>thead>tr.info>td,
+.table>thead>tr.info>th,
+.table>thead>tr>td.info,
+.table>thead>tr>th.info {
+    background-color: transparent;
+}
+.table>tbody>tr.info>th,
+.table>tbody>tr>th.info,
+.table>tfoot>tr.info>th,
+.table>tfoot>tr>th.info,
+.table>thead>tr.info>th,
+.table>thead>tr>th.info {
+  border-left: 5px solid #15808a;
+}
+
+/* ---------- status danger ----------- */
+
+.table>tbody>tr.danger>td,
+.table>tbody>tr.danger>th,
+.table>tbody>tr>td.danger,
+.table>tbody>tr>th.danger,
+.table>tfoot>tr.danger>td,
+.table>tfoot>tr.danger>th,
+.table>tfoot>tr>td.danger,
+.table>tfoot>tr>th.danger,
+.table>thead>tr.danger>td,
+.table>thead>tr.danger>th,
+.table>thead>tr>td.danger,
+.table>thead>tr>th.danger {
+    background-color: transparent;
+}
+.table>tbody>tr.danger>th,
+.table>tbody>tr>th.danger,
+.table>tfoot>tr.danger>th,
+.table>tfoot>tr>th.danger,
+.table>thead>tr.danger>th,
+.table>thead>tr>th.danger {
+  border-left: 5px solid #c9034f;
+}
+
+/* ---------- status warning ----------- */
+
+.table>tbody>tr.warning>td,
+.table>tbody>tr.warning>th,
+.table>tbody>tr>td.warning,
+.table>tbody>tr>th.warning,
+.table>tfoot>tr.warning>td,
+.table>tfoot>tr.warning>th,
+.table>tfoot>tr>td.warning,
+.table>tfoot>tr>th.warning,
+.table>thead>tr.warning>td,
+.table>thead>tr.warning>th,
+.table>thead>tr>td.warning,
+.table>thead>tr>th.warning {
+    background-color: transparent;
+}
+.table>tbody>tr.warning>th,
+.table>tbody>tr>th.warning,
+.table>tfoot>tr.warning>th,
+.table>tfoot>tr>th.warning,
+.table>thead>tr.warning>th,
+.table>thead>tr>th.warning {
+  border-left: 5px solid #ffcd00;
+}
+
+/*//////////// NAV MANAGEMENT /////////////*/
+/*/////////////////////////////////////////*/
+
+.bs-docs-nav .navbar-toggle .icon-bar {
+    background-color: #285269;
+}
+
+.bs-docs-nav .navbar-brand, .bs-docs-nav .navbar-nav>li>a {
+    font-weight: 500;
+    color: #15808a;
+}
+
+.bs-docs-nav .navbar-nav>.active>a, .bs-docs-nav .navbar-nav>.active>a:hover, .bs-docs-nav .navbar-nav>li>a:hover {
+    color: #15808a;
+    text-decoration: underline;
+    background-color: #eee;
+}
+
+.bs-docs-sidebar .nav>.active:focus>a, .bs-docs-sidebar .nav>.active:hover>a, .bs-docs-sidebar .nav>.active>a {
+    padding-left: 18px;
+    font-weight: 700;
+    color: #15808a;
+    background-color: transparent;
+    border-left: 2px solid #15808a;
+}
+
+/*//////////// QUOTE MANAGEMENT /////////////*/
+/*///////////////////////////////////////////*/
+
+blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 17.5px;
+    border-left: 5px solid #ce3700;
+}
+
+blockquote .small, blockquote footer, blockquote small {
+    display: block;
+    font-size: 80%;
+    line-height: 1.42857143;
+    color: #ce3700;
+}
+
+.blockquote-reverse, blockquote.pull-right {
+    padding-right: 15px;
+    padding-left: 0;
+    text-align: right;
+    border-right: 5px solid #ce3700;
+    border-left: 0;
+}
+
+/*//////////// CUSTOM MANAGEMENT /////////////*/
+/*////////////////////////////////////////////*/
+
+.bs-docs-header, .bs-docs-masthead {
+    position: relative;
+    padding: 30px 0;
+    color: white;
+    text-align: left;
+    text-shadow: 0 1px 0 rgb(0 0 0 / 10%);
+    background-color: #15808a;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#5ed9de),to(#285269));
+    background-image: -webkit-linear-gradient(top,#5ed9de 0,#285269 100%);
+    background-image: -o-linear-gradient(top,#5ed9de 0,#285269 100%);
+    background-image: linear-gradient(to bottom,#5ed9de 0,#285269 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5ed9de", endColorstr="#285269", GradientType=0);
+    background-repeat: repeat-x;
 }
