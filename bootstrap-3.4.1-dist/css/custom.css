@@ -1239,6 +1239,18 @@ td {
     text-decoration: underline;
 }
 
+.alert-dismissable .close, .alert-dismissible .close {
+    position: relative;
+    top: -5px;
+    right: 5px;
+    padding: 0px 5px 2px 5px;
+    border: 1px solid #ff9ac1;
+    color: #c9034f;
+    border-radius: 5px;
+    font-size: 26px;
+    line-height: 1;
+    opacity: 1;
+}
 /*//////////// QUOTE MANAGEMENT /////////////*/
 /*///////////////////////////////////////////*/
 
