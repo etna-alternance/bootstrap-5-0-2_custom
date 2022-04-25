@@ -231,6 +231,54 @@ p {
 .color-swatches .brand-danger{
   background-color: #C9034F;
 }
+.panel-primary {
+    border-color: #15808a;
+}
+.panel-info {
+    border-color: #285269;
+}
+.panel-default {
+    border-color: #575757;
+}
+.panel-success {
+    border-color: #076908;
+}
+.panel-warning {
+    border-color: #886c11;
+}
+.panel-danger {
+    border-color: #C9034F;
+}
+.panel-primary>.panel-heading {
+    color: #fff;
+    background-color: #15808a;
+    border-color: #15808a;
+}
+.panel-info>.panel-heading {
+    color: #fff;
+    background-color: #285269;
+    border-color: #285269;
+}
+.panel-default>.panel-heading {
+    color: #fff;
+    background-color: #575757;
+    border-color: #575757;
+}
+.panel-success>.panel-heading {
+    color: #fff;
+    background-color: #076908;
+    border-color: #076908;
+}
+.panel-warning>.panel-heading {
+    color: #fff;
+    background-color: #886c11;
+    border-color: #886c11;
+}
+.panel-danger>.panel-heading {
+    color: #fff;
+    background-color: #C9034F;
+    border-color: #C9034F;
+}
 
 /*//////////// BTN MANAGEMENT //////////////*/
 /*///////////////////////////////////////////*/
@@ -1123,6 +1171,35 @@ blockquote .small, blockquote footer, blockquote small {
     text-align: right;
     border-right: 5px solid #ce3700;
     border-left: 0;
+}
+
+/*//////////// Panels   /////////////*/
+/*///////////////////////////////////*/
+
+.panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 0;
+    -webkit-box-shadow: 0 0px 0px rgb(0 0 0 / 0%);
+    box-shadow: 0 0px 0px rgb(0 0 0 / 0%);
+}
+
+.panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.panel-primary>.panel-heading,
+.panel-info>.panel-heading,
+.panel-default>.panel-heading,
+.panel-success>.panel-heading,
+.panel-warning>.panel-heading,
+.panel-danger>.panel-heading {
+    background-image: none !important;
+    background-repeat: repeat-x;
 }
 
 /*//////////// CUSTOM MANAGEMENT /////////////*/
