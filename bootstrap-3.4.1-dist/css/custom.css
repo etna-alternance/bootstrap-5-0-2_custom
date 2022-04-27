@@ -1045,6 +1045,10 @@ input[type=radio]:disabled {
   filter: none;
   opacity: 0.5;
 }
+.input-group-btn>.btn {
+    position: relative;
+    padding: 5px 24px;
+}
 
 /*//////////// TABLE MANAGEMENT /////////////*/
 /*///////////////////////////////////////////*/
@@ -1202,7 +1206,10 @@ td {
 
 .nav-tabs>li.active>a,
 .nav-tabs>li.active>a:focus,
-.nav-tabs>li.active>a:hover {
+.nav-tabs>li.active>a:hover,
+.nav-tabs.nav-justified>.active>a,
+.nav-tabs.nav-justified>.active>a:focus,
+.nav-tabs.nav-justified>.active>a:hover {
     color: #555;
     cursor: default;
     margin-right: 2px;
@@ -1220,6 +1227,11 @@ td {
 .nav>li>a:focus, .nav>li>a:hover {
     text-decoration: none;
     background-color: transparent;
+}
+.nav-pills li:hover{
+  color: #15808a;
+  background-color: #eee;
+  border-radius: 5px;
 }
 
 /*//////////// ALERT & NOTIFICATIONS MANAGEMENT /////////////*/
