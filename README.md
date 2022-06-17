@@ -52,3 +52,10 @@ On apporte plus de simplicité et on révise le style des boutons large et small
 
 ### Les éléments de formulaires
 On revoit le look des inputs, selects, range, checkbox...
+
+____________________
+
+Pour lancer bootstrap 3 :
+C'est du html donc il suffit d'ouvrir dans son navigateur : bootstrap-3.4.1-dist/components.html
+
+Tout n'est pas strictement similaire notamment nous utilisons énormément de panel dans bootstrap 3, ils n'existent plus dans bootstrap 5 et ont été remplacés par des cards. Certains composants ont été redesigner pour convenir au design system côté bootstrap 3 mais pas encore côté bootstrap 5, aussi pour laisser court à l'évolution.
